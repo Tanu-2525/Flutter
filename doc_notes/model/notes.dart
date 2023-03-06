@@ -76,7 +76,7 @@ class _notes_pgState extends State<notes_pg> {
                             data[index][1],
                           ),
                           SizedBox(
-                            width: 250,
+                            width: 200,
                           ),
                           Text(
                             data[index][2],
