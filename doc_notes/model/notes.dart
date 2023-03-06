@@ -10,9 +10,9 @@ class notes_pg extends StatefulWidget {
 
 class _notes_pgState extends State<notes_pg> {
   final data=[
-  ["00:00","DD MM YYYY","Dr Abdul","Doctors diagnose disease, provide treatment, counsel patients with injuries, diseases or illnesses. The specific duties depend upon the speciality you pursue in your MBBS. Some doctors work in cardiology, whereas others may work in surgery, neurology, pulmonology or rheumatology."],
-  ["00:00","DD MM YYYY","Dr Abdul","Doctors diagnose disease, provide treatment, counsel patients with injuries, diseases or illnesses. The specific duties depend upon the speciality you pursue in your MBBS. Some doctors work in cardiology, whereas others may work in surgery, neurology, pulmonology or rheumatology.",],
-    ["00:00","DD MM YYYY","Dr Abdul","Doctors diagnose disease, provide treatment, counsel patients with injuries, diseases or illnesses. The specific duties depend upon the speciality you pursue in your MBBS. Some doctors work in cardiology, whereas others may work in surgery, neurology, pulmonology or rheumatology."],
+  ["00:00","DD MM YYYY","Dr Abdul Kalam","Doctors diagnose disease, provide treatment, counsel patients with injuries, diseases or illnesses. The specific duties depend upon the speciality you pursue in your MBBS. Some doctors work in cardiology, whereas others may work in surgery, neurology, pulmonology or rheumatology."],
+  ["00:00","DD MM YYYY","Dr Abdul Kalam","Doctors diagnose disease, provide treatment, counsel patients with injuries, diseases or illnesses. The specific duties depend upon the speciality you pursue in your MBBS. Some doctors work in cardiology, whereas others may work in surgery, neurology, pulmonology or rheumatology.",],
+    ["00:00","DD MM YYYY","Dr Abdul Kalam","Doctors diagnose disease, provide treatment, counsel patients with injuries, diseases or illnesses. The specific duties depend upon the speciality you pursue in your MBBS. Some doctors work in cardiology, whereas others may work in surgery, neurology, pulmonology or rheumatology."],
   ];
 
 
@@ -65,19 +65,22 @@ class _notes_pgState extends State<notes_pg> {
                   child: Column(
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
-                            data[index][0],
+                          Row(
+                            children: [
+                              Text(
+                                data[index][0],
+                              ),
+                              Text(
+                                "-",
+                              ),
+                              Text(
+                                data[index][1],
+                              ),
+                            ],
                           ),
-                          Text(
-                            "-",
-                          ),
-                          Text(
-                            data[index][1],
-                          ),
-                          SizedBox(
-                            width: 200,
-                          ),
+
                           Text(
                             data[index][2],
                           )
